@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="270dip"
+    android:background="#F781BE"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/imgDrawerImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/applogo"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/yellow"
+        android:textStyle="bold"
+        android:textColor="@color/foodiecolour"
+        android:textSize="64sp"
+        />
+
+    <TextView
+        android:id="@+id/txtDrawerText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="185dp"
+        android:fontFamily="@font/fontsplash"
+        android:text="Name"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtDrawerSecondaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:text="+91-1234567890"
+        android:layout_below="@+id/txtDrawerText"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F2F2F2</color>
+    <color name="colorPrimaryDark">#C0C0C0</color>
+    <color name="colorAccent">#C23E10</color>
+    <color name="colorFavorite">#FF0000</color>
+    <color name="foodiecolour">#FF0080</color>
+    <color name="restname">#000099</color>
+    <color name="price">#006622</color>
+</resources>

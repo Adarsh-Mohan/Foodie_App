@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="5dp"
+    android:text="Your previous orders are listed below: "
+    android:textAlignment="center"
+    android:maxLines="1"
+    android:paddingTop="8dp"
+    android:textSize="15sp"
+    android:fontFamily="@font/fontsplash"
+    />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:layout_marginTop="52dp"
+    android:background="#000000"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"/>
+<RelativeLayout
+    android:id="@+id/rlFavorites"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="60dp"
+    android:visibility="visible">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerRestaurants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" />
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/rlNoOrders"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-56dp"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/imgEmptyCart"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_favorites" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgEmptyCart"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="@string/oops_you_have_not_made_any_orders"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/rlLoading"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="invisible">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:outlineAmbientShadowColor="@color/foodiecolour"/>
+</RelativeLayout>
+</FrameLayout>

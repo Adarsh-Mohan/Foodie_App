@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Foodie</string>
+    <string name="favorites">Favorites</string>
+    <string name="dashboard">dashboard</string>
+    <string name="profile">profile</string>
+    <string name="about_app">about_app</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="no_favorites">You do not have any favorite restaurants</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="faq_answer_six">A.6 You will be able to download the bill once your order is delivered to you.
+    </string>
+    <string name="pref_file_name" />
+    <string name="oops_you_have_not_made_any_orders">Oops..You have not made any Orders</string>
+</resources>

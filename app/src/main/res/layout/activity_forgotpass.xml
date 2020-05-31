@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/foodiecolour"
+        android:id="@+id/toolbar"
+        />
+
+    <ImageView
+        android:id="@+id/imgPassLogo"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="140dp"
+        android:src="@drawable/applogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_below="@+id/imgPassLogo"
+        android:fontFamily="@font/yellow"
+        android:textStyle="bold"
+        android:paddingLeft="178dp"
+        android:textColor="@color/foodiecolour"
+        android:textSize="40sp"
+        />
+
+    <TextView
+        android:id="@+id/txtInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgPassLogo"
+        android:layout_marginTop="75dp"
+        android:text="Enter your registered mobile number and E-mail id"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/fontsplash"
+        android:padding="6dp"
+        android:textSize="14sp"
+
+        />
+    <EditText
+        android:id="@+id/etMobilenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="6dp"
+        android:layout_below="@+id/txtInstruction"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:drawableLeft="@drawable/ic_phone"
+        android:maxLines="1"
+        android:hint="Mobile Number(10 digits)"
+        android:autofillHints="Mobile Number"
+        android:backgroundTint="#F2F2F2"
+        android:background="@drawable/curvededittext"/>
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="6dp"
+        android:layout_below="@+id/etMobilenumber"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:hint="Email Address"
+        android:backgroundTint="#F2F2F2"
+        android:drawableLeft="@drawable/ic_email"
+        android:background="@drawable/curvededittext"
+        />
+    <Button
+
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        android:padding="6dp"
+        android:layout_below="@+id/etEmail"
+        android:backgroundTint="@color/foodiecolour"
+        android:text="Next"
+        android:textStyle="bold"
+        android:textColor="	#ffffff"
+        android:fontFamily="@font/yellow"
+        android:textSize="25sp"
+        android:background="@drawable/curvededittext"
+
+        />
+
+
+</RelativeLayout>

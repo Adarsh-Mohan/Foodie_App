@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/foodiecolour"
+        android:id="@+id/toolbar"
+        />
+<ImageView
+    android:layout_width="150dp"
+    android:layout_height="180dp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/imgPassLogo"
+    android:layout_below="@+id/toolbar"
+    android:layout_marginTop="30dp"
+    android:src="@drawable/otp">
+
+</ImageView>
+<TextView
+android:id="@+id/txtInstruction"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@+id/imgPassLogo"
+android:text="Enter the received OTP "
+    android:fontFamily="@font/fontsplash"
+android:layout_centerHorizontal="true"
+android:padding="6dp"
+android:textSize="16sp"
+android:layout_marginTop="30dp"
+    />
+
+
+<EditText
+android:id="@+id/etOtp"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="One Time Password(OTP)"
+    android:drawableLeft="@drawable/ic_otp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="30dp"
+android:inputType="number"
+    android:maxLength="4"
+    android:background="@drawable/curvededittext"
+    android:backgroundTint="@color/colorPrimary"
+android:layout_below="@+id/txtInstruction"
+    />
+<EditText
+android:id="@+id/etNewpass"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="New Password"
+    android:drawableLeft="@drawable/ic_lock"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/curvededittext"
+    android:backgroundTint="@color/colorPrimary"
+android:inputType="textPassword"
+android:layout_below="@+id/etOtp"
+    />
+    <EditText
+        android:id="@+id/etConfirmpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_lock"
+        android:background="@drawable/curvededittext"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_below="@+id/etNewpass"
+        />
+
+<Button
+android:id="@+id/btnSubmit"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/etConfirmpass"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="35dp"
+android:textColor="#ffffff"
+android:textSize="22sp"
+android:text="Submit "
+android:background="@drawable/curvededittext"
+    android:backgroundTint="@color/foodiecolour"
+    android:fontFamily="@font/yellow"
+
+android:textStyle="bold"
+    />
+
+
+</RelativeLayout>

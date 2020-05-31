@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:weightSum="6"
+    >
+
+    <TextView
+        android:id="@+id/txtSno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:text="1"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3.5"
+        >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtItemName"
+            android:text="item name"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:padding="3dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="item cost"
+            android:textColor="@color/price"
+            android:id="@+id/txtItemcost"
+            android:layout_alignParentBottom="true"
+            android:padding="2dp"
+            android:layout_marginBottom="4dp"
+            android:textSize="12sp"
+            />
+
+
+    </RelativeLayout>
+
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1.5"
+      android:orientation="horizontal">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/foodiecolour"
+        android:text="Add"
+        android:padding="2dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:id="@+id/btnCart"
+        android:layout_marginRight="10dp"/>
+
+
+  </LinearLayout>
+
+</LinearLayout>

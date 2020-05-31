@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CartActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/colorPrimary"
+        app:title="My Cart"
+        app:titleTextColor="@color/foodiecolour"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:id="@+id/toolbar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/txtLinear"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txtOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ordering From:"
+            android:fontFamily="@font/fontsplash"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginLeft="4dp"
+            android:padding="3dp"/>
+
+        <TextView
+            android:id="@+id/txtCartResName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaraunt Name"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/restname"
+            android:layout_marginLeft="4dp"
+            android:padding="3dp"/>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_below="@id/txtLinear">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/txtLinear"
+        android:background="@color/colorPrimary"
+        android:id="@+id/cartDivider"
+        android:layout_marginTop="15dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerCartItems"
+        android:layout_below="@id/view"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="60dp"
+        />
+</LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnConfirmOrder"
+        android:backgroundTint="@color/foodiecolour"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:fontFamily="@font/yellow"
+        android:textSize="20sp"
+        android:background="@drawable/curvededittext"
+        android:text="Place Order(Total Rs.420)"
+        android:layout_alignParentBottom="true"
+        />
+    <RelativeLayout
+        android:id="@+id/rlLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/rlCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>

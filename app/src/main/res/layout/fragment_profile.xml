@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".fragment.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/applogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            />
+        <TextView
+            android:id="@+id/appname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_below="@+id/imgLogo"
+            android:fontFamily="@font/yellow"
+            android:textStyle="bold"
+            android:paddingLeft="168dp"
+            android:textColor="@color/foodiecolour"
+            android:textSize="40sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/llProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+
+            <TextView
+                android:id="@+id/txtUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/curvededittext"
+                android:padding="10dp"
+                android:fontFamily="@font/fontsplash"
+                android:text="Name"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+
+            <TextView
+                android:id="@+id/txtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/curvededittext"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="10dp"
+                android:fontFamily="@font/fontsplash"
+                android:text="+91-1234567890"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/curvededittext"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="10dp"
+                android:fontFamily="@font/fontsplash"
+                android:text="Email"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/curvededittext"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Delivery Address"
+                android:fontFamily="@font/fontsplash"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>
