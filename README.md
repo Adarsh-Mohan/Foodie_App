@@ -15,7 +15,6 @@ I have completed the development of a Food Ordering App as part of my Android Ap
    - Order History
    - Frequently Asked Questions (FAQs)
    - Log Out
-
 6. **Restaurant Data Retrieval**: The app has the capability to fetch a comprehensive list of restaurants from the internet using the following link: http://13.235.250.119/v2/restaurants/fetch_result/
 
 7. **My Profile Page**: Users can view and edit their personal information, including their name, phone number, and address, on the My Profile Page.
